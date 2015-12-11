@@ -101,4 +101,81 @@ public class StringExample {
 				
 	}
 	
+	
+	public void match_regions(String str, String str2)
+	{
+		
+		System.out.println(str.regionMatches(5, str, 0, 9));
+		
+	}
+	
+
+	public void compare_string_perfromance()
+	{
+		
+		long start_time, end_time;
+
+		start_time = System.currentTimeMillis();
+		
+		
+		for (int i =0 ; i<=500000;i++)
+		{
+			String str1 = "HELLO1";
+			String str2 = "HELLO1";
+		}
+		end_time = System.currentTimeMillis();
+
+		System.out.println("System performance in first attempt" + (end_time-start_time) );
+		
+		start_time = System.currentTimeMillis();
+		for (int i =0 ; i<=500000000;i++)
+		{
+			String str3 = new String("HELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEE");
+			String str4 = new String("HELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEEHELLO1 JEE");
+		}
+
+		end_time = System.currentTimeMillis();
+
+		System.out.println("System performance in second attempt" + (end_time-start_time));
+
+	}
+	
+	
+	public void optimizing_string_creation()
+	{
+		String str_arr[] = new String[999999];
+		long start_time, end_time;
+		
+		start_time= System.currentTimeMillis();
+		
+		for (int i=0;i<999999;i++)
+		{
+			str_arr[i] = "VIJAY";
+		}
+
+		end_time = System.currentTimeMillis();
+		System.out.println( "Perfromance of String Literal : " + (end_time-start_time));
+
+		start_time= System.currentTimeMillis();
+		
+		for (int i=0;i<999999;i++)
+		{
+			str_arr[i] = new String ("VIJAY");
+		}
+
+		end_time = System.currentTimeMillis();
+		System.out.println( "Perfromance of String Object : " + (end_time-start_time));
+
+		start_time= System.currentTimeMillis();
+		
+		for (int i=0;i<999999;i++)
+		{
+			str_arr[i] = new String ("VIJAY");
+			str_arr[i] = str_arr[i].intern();
+		}
+
+		end_time = System.currentTimeMillis();
+		System.out.println( "Perfromance of String Intern : " + (end_time-start_time));
+		
+	}
 }

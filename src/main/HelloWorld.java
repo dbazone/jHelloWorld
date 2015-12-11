@@ -8,7 +8,10 @@ public class HelloWorld {
 		
 		String str = "PERSISTENCE is THE KEY TO SUCCESS";
 
-		se.string_to_upper(str);
+		se.optimizing_string_creation();
+		//se.compare_string_perfromance();
+		
+		//se.match_regions(str, "STENCE is");
 		
 
 		//System.out.println(se.string_search(str,"IS"));
