@@ -4,12 +4,27 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		
-		StringExample se = new StringExample();
+		
+		arrary_practice ap = new arrary_practice();
+		
+		String arr1[] = {"Vijay", "Mishra", "Hello", "kAllo"};
+		//String arr2[] = {"Vijay", "Mishra"};
+		
+	
+		ap.check_if_array_are_equal();
+		//ap.extend_array();
+		
+		//ap.reverse_array(arr1);
+		
+		//ap.sort_and_search(arr1, "Hello");
+		
+		
+/*		StringExample se = new StringExample();
 		
 		String str = "PERSISTENCE is THE KEY TO SUCCESS";
 
 		se.optimizing_string_creation();
-		//se.compare_string_perfromance();
+*/		//se.compare_string_perfromance();
 		
 		//se.match_regions(str, "STENCE is");
 		
@@ -26,4 +41,8 @@ public class HelloWorld {
 
 	}
 
+
+
+
+	
 }
