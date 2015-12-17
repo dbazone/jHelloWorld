@@ -3,15 +3,20 @@ package main;
 public class HelloWorld {
 
 	public static void main(String[] args) {
+	
+		
+		datetime_practice dt = new datetime_practice();
+		
+		dt.add_time_to_date();
 		
 		
-		arrary_practice ap = new arrary_practice();
+//		arrary_practice ap = new arrary_practice();
 		
-		String arr1[] = {"Vijay", "Mishra", "Hello", "kAllo"};
+//		String arr1[] = {"Vijay", "Mishra", "Hello", "kAllo"};
 		//String arr2[] = {"Vijay", "Mishra"};
 		
 	
-		ap.check_if_array_are_equal();
+//		ap.check_if_array_are_equal();
 		//ap.extend_array();
 		
 		//ap.reverse_array(arr1);
