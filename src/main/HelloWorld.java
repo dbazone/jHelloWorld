@@ -5,9 +5,13 @@ public class HelloWorld {
 	public static void main(String[] args) {
 	
 		
-		datetime_practice dt = new datetime_practice();
+		methods md = new methods();
 		
-		dt.add_time_to_date();
+		md.fibonacci(100);
+		
+//		datetime_practice dt = new datetime_practice();
+		
+	//	dt.add_time_to_date();
 		
 		
 //		arrary_practice ap = new arrary_practice();
